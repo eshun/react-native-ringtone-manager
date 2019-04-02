@@ -3,6 +3,7 @@ package com.reactlibrary;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
+import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.provider.MediaStore;
@@ -55,6 +56,13 @@ public class RNRingtoneManagerModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void getRingtones(int ringtoneType) {
 
+    }
+
+    @ReactMethod
+    public void play() {
+        Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        Ringtone r = RingtoneManager.getRingtone(this.reactContext, notification);
+        r.play();
     }
 
     @ReactMethod
