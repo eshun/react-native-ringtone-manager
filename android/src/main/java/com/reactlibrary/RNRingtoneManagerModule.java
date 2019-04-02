@@ -1,5 +1,4 @@
-
-package com.reactlibrary;
+package com.xmcares.dataone.bss.app;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -8,7 +7,9 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.provider.MediaStore;
 
+import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
